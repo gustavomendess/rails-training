@@ -81,6 +81,7 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
     crass (1.0.6)
     database_cleaner (2.0.1)
       database_cleaner-active_record (~> 2.0.0)
@@ -271,6 +272,10 @@ GEM
     sexp_processor (4.15.3)
     shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
+    sidekiq (6.4.1)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.2.0)
     simplecov (0.21.2)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -335,6 +340,7 @@ DEPENDENCIES
   rubocop-rails
   rubycritic
   shoulda-matchers
+  sidekiq (~> 6.4, >= 6.4.1)
   simplecov
   spring
   sprockets-rails
